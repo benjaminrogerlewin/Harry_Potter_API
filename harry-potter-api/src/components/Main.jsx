@@ -43,7 +43,7 @@ export default function Main() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Characters" element={<Characters characters={characters}/>} />
-                <Route path="/Characters/Other" element={<Other />} />
+                <Route path="/Characters/Other" element={<Other characters={characters}/>} />
                 <Route path="/Characters/Hogwarts" element={<Hogwarts />} />
                 <Route path="/Characters/Hogwarts/Gryffindor" element={<Gryffindor />} />
                 <Route path="/Characters/Hogwarts/Gryffindor/Students" element={<GryffindorStudents characters={characters}/>} />
