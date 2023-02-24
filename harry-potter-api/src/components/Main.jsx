@@ -48,6 +48,9 @@ export default function Main() {
                 <Route path="/Characters/Hogwarts/Ravenclaw" element={<Ravenclaw />} />
                 <Route path="/Characters/Hogwarts/Ravenclaw/Students" element={<RavenclawStudents characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Ravenclaw/Staff" element={<RavenclawStaff characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Hufflepuff" element={<Ravenclaw />} />
+                <Route path="/Characters/Hogwarts/Hufflepuff/Students" element={<HufflepuffStudents characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Hufflepuff/Staff" element={<HufflepuffStaff characters={characters}/>} />
                 <Route path="/Spells" element={<Spells spells={spells}/>} />
             </Routes>
         </div>
