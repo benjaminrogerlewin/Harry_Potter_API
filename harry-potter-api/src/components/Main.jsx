@@ -8,7 +8,9 @@ import Other from './Other'
 import Hogwarts from './Hogwarts'
 import Gryffindor from './Gryffindor'
 import GryffindorStudents from './GryffindorStudents'
+import GryffindorStudentPage from './GryffindorStudentPage'
 import GryffindorStaff from './GryffindorStaff'
+import GryffindorStaffPage from './GryffindorStaffPage'
 import Ravenclaw from './Ravenclaw'
 import RavenclawStudents from './RavenclawStudents'
 import RavenclawStaff from './RavenclawStaff'
@@ -47,7 +49,9 @@ export default function Main() {
                 <Route path="/Characters/Hogwarts" element={<Hogwarts />} />
                 <Route path="/Characters/Hogwarts/Gryffindor" element={<Gryffindor />} />
                 <Route path="/Characters/Hogwarts/Gryffindor/Students" element={<GryffindorStudents characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Gryffindor/Students/:index" element={<GryffindorStudentPage characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Gryffindor/Staff" element={<GryffindorStaff characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Gryffindor/Staff/:index" element={<GryffindorStaffPage characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Ravenclaw" element={<Ravenclaw />} />
                 <Route path="/Characters/Hogwarts/Ravenclaw/Students" element={<RavenclawStudents characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Ravenclaw/Staff" element={<RavenclawStaff characters={characters}/>} />
