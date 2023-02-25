@@ -24,7 +24,9 @@ import HufflepuffStaff from './HufflepuffStaff'
 import HufflepuffStaffPage from './HufflepuffStaffPage'
 import Slytherin from './Slytherin'
 import SlytherinStudents from './SlytherinStudents'
+import SlytherinStudentPage from './SlytherinStudentPage'
 import SlytherinStaff from './SlytherinStaff'
+import SlytherinStaffPage from './SlytherinStaffPage'
 
 export default function Main() {
     const [characters, setCharacters] = useState([])
@@ -68,7 +70,9 @@ export default function Main() {
                 <Route path="/Characters/Hogwarts/Hufflepuff/Staff/:index" element={<HufflepuffStaffPage characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Slytherin" element={<Slytherin />} />
                 <Route path="/Characters/Hogwarts/Slytherin/Students" element={<SlytherinStudents characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Slytherin/Students/:index" element={<SlytherinStudentPage characters={characters}/>} />
                 <Route path="/Characters/Hogwarts/Slytherin/Staff" element={<SlytherinStaff characters={characters}/>} />
+                <Route path="/Characters/Hogwarts/Slytherin/Staff/:index" element={<SlytherinStaffPage characters={characters}/>} />
                 <Route path="/Spells" element={<Spells spells={spells}/>} />
             </Routes>
         </div>
