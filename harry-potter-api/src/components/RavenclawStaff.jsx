@@ -1,4 +1,14 @@
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+
 export default function RavenclawStaff(props) {
+
+    let navigate = useNavigate()
+
+    const showCharacter = (index) => {
+        navigate(`${index}`)
+    }
+
     return (
         <div>
             <div>
@@ -6,10 +16,10 @@ export default function RavenclawStaff(props) {
             </div>
             <div>
             {
-                props.characters.map((character) => {
+                props.characters.map((character, index) => {
                 if (character.house === 'Ravenclaw' && character.hogwartsStaff) {
                     return (
-                    <div>
+                    <div className="staffCard" key={index} onClick={() => showCharacter(index)}>
                         <h3>{character.name}</h3>
                     </div>
                     )

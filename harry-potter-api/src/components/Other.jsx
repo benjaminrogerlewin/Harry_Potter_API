@@ -1,4 +1,14 @@
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+
 export default function Other(props) {
+    
+    let navigate = useNavigate()
+
+    const showCharacter = (index) => {
+        navigate(`${index}`)
+    }
+
     return (
         <div>
             <div>
@@ -6,10 +16,10 @@ export default function Other(props) {
             </div>
             <div>
             {
-                props.characters.map((character) => {
+                props.characters.map((character, index) => {
                 if (character.house === '') {
                     return (
-                    <div>
+                    <div className="otherCard" key={index} onClick={() => showCharacter(index)}>
                         <h3>{character.name}</h3>
                     </div>
                     )

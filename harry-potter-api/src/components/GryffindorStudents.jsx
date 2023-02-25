@@ -8,6 +8,7 @@ export default function GryffindorStudents(props) {
     const showCharacter = (index) => {
         navigate(`${index}`)
     }
+    
     return (
         <div>
             <div>
