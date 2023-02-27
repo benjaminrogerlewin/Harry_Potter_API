@@ -4,12 +4,12 @@ export default function Characters() {
 
 
     return (
-        <div className="grid1">
-            <div>
-                <Link to="/Characters/Other">Other</Link>
+        <div className="other-hogwarts">
+            <div className="other-btn">
+                <Link to="/Characters/Other"><button className="other-btn">Other</button></Link>
             </div>
             <div>
-                <Link to="/Characters/Hogwarts">Hogwarts</Link>
+                <Link to="/Characters/Hogwarts"><button className="character-btn">Hogwarts</button></Link>
             </div>
         </div>
     )

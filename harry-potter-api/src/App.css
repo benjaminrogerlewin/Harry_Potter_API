@@ -24,8 +24,99 @@
     padding: 5px;
 }
 
+.search-bar {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 .title {
     font-size: 30px;
+}
+
+.other-hogwarts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 74vh;
+}
+
+.character-btn {
+    width: 45vw;
+    height: 60vh;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.character-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 2px;
+}
+
+.other-btn {
+    width: 45vw;
+    height: 60vh;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.other-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 2px;
+}
+
+.houses {
+    width: 100vw;
+    height: 74vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gbtn {
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+}
+
+.rbtn {
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+}
+
+.hbtn {
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+}
+
+.sbtn {
+    background-color:#333;
+    padding:20px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
 }
 
 .nav-links {
@@ -38,22 +129,23 @@
     font-size: 30px;
     /* padding: 10px; */
     margin-bottom: 15px;
+    margin-left: -10px;
 }
 
 a {
     color: black;
-    background-color: rgb(212, 134, 134);
+    /* background-color: rgb(212, 134, 134); */
     text-decoration: none;
-    border: 2px solid;
+    /* border: 2px solid; */
     width: 180px;
     padding: 5px;
     cursor: pointer;
 }
 
-a:hover {
+/* a:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 5px 2px;
-}
+} */
 
 .body {
     width: 100vw;
@@ -87,6 +179,7 @@ a:hover {
 .characterCard:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 5px 2px;
+    background-color: rgb(231, 220, 202);
 }
 
 img {
