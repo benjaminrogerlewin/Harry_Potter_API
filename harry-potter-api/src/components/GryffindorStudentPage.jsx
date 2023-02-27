@@ -15,9 +15,15 @@ export default function GryffindorStudentPage(props) {
     }, [])
 
     return (
-        <div className="smallCard">
+        <div className="smallGryffindorCard">
+            <div>
+                <img src={character.image} id="single-image" />
+            </div>
             <div className="info">
                 <h1>{character.name}</h1>
+                <h3>House: {character.house}</h3>
+                <h3>Gender: {character.gender}</h3>
+                <h3>Date of Birth: {character.dateOfBirth}</h3>
             </div>
         </div>
     )
