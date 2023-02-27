@@ -48,6 +48,8 @@
     height: 60vh;
     font-size: 50px;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 10%;
 }
 
 .character-btn:hover {
@@ -60,6 +62,8 @@
     height: 60vh;
     font-size: 50px;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 10%;
 }
 
 .other-btn:hover {
@@ -69,54 +73,74 @@
 
 .houses {
     width: 100vw;
-    height: 74vh;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: .85fr 1fr;
+    margin-left: 60px;
 }
 
 .gbtn {
-    padding:20px;
-    border-radius:10px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 45vw;
+    height: 35vh;
+    cursor: pointer;
+}
+
+.gbtn:hover {
+    box-shadow: 0px 0px 3px 2px;
 }
 
 .rbtn {
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 45vw;
+    height: 35vh;
+    cursor: pointer;
+}
+
+.rbtn:hover {
+    box-shadow: 0px 0px 3px 2px;
 }
 
 .hbtn {
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 45vw;
+    height: 35vh;
+    cursor: pointer;
+}
+
+.hbtn:hover {
+    box-shadow: 0px 0px 3px 2px;
 }
 
 .sbtn {
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 45vw;
+    height: 35vh;
+    cursor: pointer;
+}
+
+.sbtn:hover {
+    box-shadow: 0px 0px 3px 2px;
 }
 
 .nav-links {
@@ -151,14 +175,12 @@ a {
     width: 100vw;
     height: 74vh;
     overflow: scroll;
-    /* border: 2px solid; */
     background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .character-grid {
-    /* border: 3px solid; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
