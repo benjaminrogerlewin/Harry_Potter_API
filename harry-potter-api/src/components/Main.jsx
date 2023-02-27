@@ -46,7 +46,7 @@ export default function Main() {
     }, [])
 
     return (
-        <div>
+        <div className="body">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Characters" element={<Characters characters={characters}/>} />

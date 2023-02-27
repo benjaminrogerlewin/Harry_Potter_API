@@ -14,15 +14,23 @@ export default function GryffindorStudents(props) {
             <div>
                 <h1>Gryffindor Students</h1>
             </div>
-            <div>
+            <div className="character-grid">
             {
                 props.characters.map((character, index) => {
-                if (character.house === 'Gryffindor' && character.hogwartsStudent) {
+                if (character.house === 'Gryffindor' && character.hogwartsStudent && character.image) {
                     return (
-                    <div className="studentCard" key={index} onClick={() => showCharacter(index)}>
+                    <div className="characterCard" key={index} onClick={() => showCharacter(index)}>
+                        <img src={character.image} />
                         <h3>{character.name}</h3>
                     </div>
                     )
+                } else if (character.house === 'Gryffindor' && character.hogwartsStudent && !character.image) {
+                    return (
+                        <div className="characterCard" key={index} onClick={() => showCharacter(index)}>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5E3CX1jPdj1-Ohjs70JKjebmO0xe6Zkemw&usqp=CAU" />
+                            <h3>{character.name}</h3>
+                        </div>
+                        )
                 }
                 })
             }

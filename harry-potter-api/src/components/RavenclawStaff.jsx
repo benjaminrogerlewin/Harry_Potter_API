@@ -14,15 +14,23 @@ export default function RavenclawStaff(props) {
             <div>
                 <h1>Ravenclaw Staff</h1>
             </div>
-            <div>
+            <div className="character-grid">
             {
                 props.characters.map((character, index) => {
-                if (character.house === 'Ravenclaw' && character.hogwartsStaff) {
+                if (character.house === 'Ravenclaw' && character.hogwartsStaff && character.image) {
                     return (
-                    <div className="staffCard" key={index} onClick={() => showCharacter(index)}>
+                    <div className="characterCard" key={index} onClick={() => showCharacter(index)}>
+                        <img src={character.image} />
                         <h3>{character.name}</h3>
                     </div>
                     )
+                } else if (character.house === 'Ravenclaw' && character.hogwartsStaff && !character.image) {
+                    return (
+                        <div className="characterCard" key={index} onClick={() => showCharacter(index)}>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5E3CX1jPdj1-Ohjs70JKjebmO0xe6Zkemw&usqp=CAU" />
+                            <h3>{character.name}</h3>
+                        </div>
+                        )
                 }
                 })
             }
