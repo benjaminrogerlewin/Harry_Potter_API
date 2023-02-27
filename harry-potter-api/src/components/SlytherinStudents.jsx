@@ -11,8 +11,8 @@ export default function SlytherineStudents(props) {
 
     return (
         <div>
-            <div>
-                <h1>Slytherin Students</h1>
+             <div>
+                <Link to="/Characters/Hogwarts/Slytherin"><button className="back-btn">Back</button></Link>
             </div>
             <div className="character-grid">
             {

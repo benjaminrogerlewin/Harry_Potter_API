@@ -12,7 +12,7 @@ export default function GryffindorStaff(props) {
     return (
         <div>
             <div>
-                <h1>Gryffindor Staff</h1>
+                <Link to="/Characters/Hogwarts/Gryffindor"><button className="back-btn">Back</button></Link>
             </div>
             <div className="character-grid">
             {

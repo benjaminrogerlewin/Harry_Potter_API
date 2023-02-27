@@ -11,8 +11,8 @@ export default function HufflepuffStaff(props) {
     
     return (
         <div>
-            <div>
-                <h1>Hufflepuff Staff</h1>
+             <div>
+                <Link to="/Characters/Hogwarts/Hufflepuff"><button className="back-btn">Back</button></Link>
             </div>
             <div className="character-grid">
             {

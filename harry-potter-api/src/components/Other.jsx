@@ -11,9 +11,6 @@ export default function Other(props) {
 
     return (
         <div>
-            <div>
-                <h1>Other Characters</h1>
-            </div>
             <div className="character-grid">
             {
                 props.characters.map((character, index) => {

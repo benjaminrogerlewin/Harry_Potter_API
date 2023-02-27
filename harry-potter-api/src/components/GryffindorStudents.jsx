@@ -11,8 +11,8 @@ export default function GryffindorStudents(props) {
     
     return (
         <div>
-            <div>
-                <h1>Gryffindor Students</h1>
+             <div>
+                <Link to="/Characters/Hogwarts/Gryffindor"><button className="back-btn">Back</button></Link>
             </div>
             <div className="character-grid">
             {

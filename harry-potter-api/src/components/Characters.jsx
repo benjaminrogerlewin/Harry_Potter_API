@@ -4,7 +4,7 @@ export default function Characters() {
 
 
     return (
-        <div className="other-hogwarts">
+        <div className="two-btns">
             <div>
                 <Link to="/Characters/Other"><button className="other-btn">Other</button></Link>
             </div>
