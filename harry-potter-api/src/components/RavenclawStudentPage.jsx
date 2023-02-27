@@ -14,7 +14,7 @@ export default function RavenclawStudentPage(props) {
         setCharacter(selectedCharacter)
     }, [])
 
-    if (character.house === 'Ravenclaw' && character.hogwartsStudent && character.image && character.dateOfBirth !== null) {
+    if (character.image && character.dateOfBirth !== null) {
         return (
             <div className="smallRavenclawCard">
                 <div>
@@ -28,7 +28,7 @@ export default function RavenclawStudentPage(props) {
                 </div>
             </div>
         )
-    } else if (character.house === 'Ravenclaw' && character.image && character.dateOfBirth === null) {
+    } else if (character.image && character.dateOfBirth === null) {
         return (
             <div className="smallRavenclawCard">
                 <div>
