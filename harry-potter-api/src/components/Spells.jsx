@@ -3,7 +3,7 @@ export default function Spells(props) {
         <div className="character-grid">
              {
                 props.spells.map((spell) => (
-                    <div className="characterCard">
+                    <div className="characterCard" id="spellCard">
                         <h3>{spell.name}</h3>
                     </div>
                 ))
