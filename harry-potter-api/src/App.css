@@ -1,5 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
 .App {
     text-align: center;
+    font-family: 'Harry Potter', sans-serif;
 }
 
 .header {
@@ -36,25 +39,73 @@
 }
 
 .home {
-    position: absolute;
     width: 100vw;
     height: 74vh;
-    /* background-image: url('https://cdn.pixabay.com/photo/2018/06/15/11/16/hogwarts-3476786__340.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.4);
+    font-size: 30px;
+    letter-spacing: .15em;
 }
 
 #spellCard {
     background-color: rgb(231, 231, 231);
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.spellDescription {
+    position: absolute;
+    opacity: 0;
+    /* border: 2px solid; */
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    height: 0px;
+    width: 313px;
+    padding: 10px;
+    font-size: 20px;
+    overflow: scroll;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #spellCard:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 5px 2px;
-    background-color: rgb(231, 220, 202);
+    /* background-color: rgb(231, 220, 202); */
+}
+
+#spellCard:hover .spellDescription {
+    box-shadow: 0px 0px 5px 2px;
+    background-color: rgb(231, 220, 202, 1);
+    opacity: 1;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    height: 600px;
+}
+
+#spellCard:hover .spellName {
+    /* box-shadow: 0px 0px 5px 2px; */
+    /* background-color: rgb(231, 220, 202, .5); */
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    /* height: 300px; */
+}
+
+.spellName {
+    font-size: 30px;
+    /* position: absolute; */
+    margin-top: 150px;
 }
 
 .back-btn {
