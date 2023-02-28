@@ -3,9 +3,7 @@
 }
 
 .header {
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-bottom: 2px solid grey;
     padding: 10px;
     height: 200px;
     display: flex;
@@ -50,6 +48,7 @@
 
 #spellCard {
     background-color: rgb(231, 231, 231);
+    padding: 30px;
 }
 
 #spellCard:hover {
@@ -207,33 +206,39 @@
     box-shadow: 0px 0px 5px 2px;
 }
 
+.nav-btn {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 10%;
+}
+
+.nav-btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px 2px;
+    background-color: rgb(231, 220, 202);
+}
+
 .nav-links {
-    /* border: 2px solid; */
     width: 100vw;
     height: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 30px;
-    /* padding: 10px; */
     margin-bottom: 15px;
     margin-left: -10px;
 }
 
 a {
     color: black;
-    /* background-color: rgb(212, 134, 134); */
     text-decoration: none;
-    /* border: 2px solid; */
     width: 180px;
     padding: 5px;
     cursor: pointer;
 }
-
-/* a:hover {
-    transform: scale(1.03);
-    box-shadow: 0px 0px 5px 2px;
-} */
 
 .body {
     width: 100vw;
@@ -252,6 +257,7 @@ a {
 }
 
 .characterCard {
+    background-color: rgb(231, 231, 231);
     border: 2px solid;
     border-radius: 10%;
     height: 400px;
