@@ -49,6 +49,18 @@
     letter-spacing: .15em;
 }
 
+.spell-card {
+    background-color: rgb(231, 231, 231);
+    border: 2px solid;
+    border-radius: 10%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
 #spellCard {
     background-color: rgb(231, 231, 231);
     padding: 30px;
@@ -65,7 +77,7 @@
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
     height: 0px;
-    width: 313px;
+    width: 295px;
     padding: 10px;
     font-size: 20px;
     overflow: scroll;
@@ -76,9 +88,8 @@
 }
 
 #spellCard:hover {
-    transform: scale(1.03);
+    transform: none;
     box-shadow: 0px 0px 5px 2px;
-    /* background-color: rgb(231, 220, 202); */
 }
 
 #spellCard:hover .spellDescription {
@@ -92,19 +103,15 @@
 }
 
 #spellCard:hover .spellName {
-    /* box-shadow: 0px 0px 5px 2px; */
-    /* background-color: rgb(231, 220, 202, .5); */
     transition: all 0.5s;
     position: relative;
     display: flex;
     margin-top: 40px;
     margin-bottom: 0px;
-    /* height: 300px; */
 }
 
 .spellName {
     font-size: 30px;
-    /* position: absolute; */
     margin-top: 150px;
 }
 
