@@ -17,6 +17,9 @@ export default function GryffindorStudentPage(props) {
     if (character.image && character.dateOfBirth !== null) {
         return (
             <div className="smallGryffindorCard">
+                <div className="details-btn">
+                    <Link to="/Characters/Hogwarts/Gryffindor/students"><button className="back-btn">Back</button></Link>
+                </div>
                 <div className="infoCard">
                     <div>
                         <img src={character.image} id="single-image" />
@@ -33,6 +36,9 @@ export default function GryffindorStudentPage(props) {
     } else if (character.image && character.dateOfBirth === null) {
         return (
             <div className="smallGryffindorCard">
+                <div className="details-btn">
+                    <Link to="/Characters/Hogwarts/Gryffindor/students"><button className="back-btn">Back</button></Link>
+                </div>
                 <div className="infoCard">
                     <div>
                         <img src={character.image} id="single-image" />
@@ -49,6 +55,9 @@ export default function GryffindorStudentPage(props) {
     } else {
         return (
             <div className="smallGryffindorCard">
+                <div className="details-btn">
+                    <Link to="/Characters/Hogwarts/Gryffindor/students"><button className="back-btn">Back</button></Link>
+                </div>
                 <div className="infoCard">
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw5E3CX1jPdj1-Ohjs70JKjebmO0xe6Zkemw&usqp=CAU" id="single-image" />
