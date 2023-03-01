@@ -202,10 +202,12 @@
     height: 33vh;
     cursor: pointer;
     font-family: 'Harry Potter', sans-serif;
+    background-color: rgb(108, 26, 23);
+    color: white;
 }
 
 .gbtn:hover {
-    box-shadow: 0px 0px 3px 2px;
+    box-shadow: 0px 0px 3px 2px black;
 }
 
 .rbtn {
@@ -219,10 +221,12 @@
     height: 33vh;
     cursor: pointer;
     font-family: 'Harry Potter', sans-serif;
+    background-color: rgb(25, 23, 108);
+    color: white;
 }
 
 .rbtn:hover {
-    box-shadow: 0px 0px 3px 2px;
+    box-shadow: 0px 0px 3px 2px black;
 }
 
 .hbtn {
@@ -236,10 +240,12 @@
     height: 33vh;
     cursor: pointer;
     font-family: 'Harry Potter', sans-serif;
+    background-color: rgb(107, 108, 23);
+    color: white;
 }
 
 .hbtn:hover {
-    box-shadow: 0px 0px 3px 2px;
+    box-shadow: 0px 0px 3px 2px black;
 }
 
 .sbtn {
@@ -253,10 +259,12 @@
     height: 33vh;
     cursor: pointer;
     font-family: 'Harry Potter', sans-serif;
+    background-color: rgb(23, 108, 41);
+    color: white;
 }
 
 .sbtn:hover {
-    box-shadow: 0px 0px 3px 2px;
+    box-shadow: 0px 0px 3px 2px black;
 }
 
 .staff-btn {
@@ -266,6 +274,7 @@
     cursor: pointer;
     border: 2px solid;
     border-radius: 10%;
+    font-family: 'Harry Potter', sans-serif;
 }
 
 .staff-btn:hover {
@@ -280,6 +289,7 @@
     cursor: pointer;
     border: 2px solid;
     border-radius: 10%;
+    font-family: 'Harry Potter', sans-serif;
 }
 
 .students-btn:hover {
