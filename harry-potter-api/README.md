@@ -16,7 +16,7 @@ credit is given to Beth who created this amazing API at hp-api.onrender.com and 
 
 ## Screenshots
 
-<img width="1433" alt="Screen Shot 2023-02-08 at 9 34 04 AM" src="https://imgur.com/W9zLHhz">
+<img width="1433" alt="Screen Shot 2023-02-08 at 9 34 04 AM" src="https://i.imgur.com/W9zLHhz.png">
 
 <img width="1433" alt="Screen Shot 2023-02-08 at 9 34 04 AM" src="">
 
