@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Search from './Search'
 import Home from './Home'
 import Characters from './Characters'
 import Spells from './Spells'
